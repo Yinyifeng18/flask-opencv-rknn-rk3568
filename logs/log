@@ -1,0 +1,281 @@
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:32:55] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:32:55] "GET /static/button_process.js HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:32:56] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:33:01] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:35:12] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:35:12] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:35:14] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:36:35] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:36:35] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:36:37] "[35m[1mGET /video_viewer HTTP/1.1[0m" 500 -
+E /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 Error on request:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3.8/site-packages/werkzeug/serving.py", line 325, in execute
+    for data in application_iter:
+  File "/usr/lib/python3.8/site-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/usr/lib/python3.8/site-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/userdata/aidemo/flask-opencv-rknn/controller/modules/home/views.py", line 38, in video_stream
+    yield (b'--frame\r\n'
+TypeError: can't concat NoneType to bytes
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:37:25] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:37:25] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:37:26] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:37:28] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:37:43] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:37:45] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:37:48] "POST /record_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:37:52] "POST /record_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:04] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:04] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:22] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:22] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:30] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:30] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:36] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:36] "GET /static/images/cat.png HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:36] "GET /static/css/style.css HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:36] "GET /static/images/adm.png HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:36] "GET /static/images/close.png HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:36] "GET /static/images/bg1.jpg HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:36] "GET /static/images/key.png HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:36] "GET /static/images/pass.png HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:39] "POST /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:39] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:41] "POST /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:41] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:42] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:42] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:47] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:47] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:55] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:39:55] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:47:08] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:47:08] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:47:38] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:48:53] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:48:53] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:21] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:46] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:48] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:48] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:56] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:56] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:56] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:56] "[36mGET /static/images/key.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:56] "[36mGET /static/images/pass.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:56] "[36mGET /static/images/adm.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:56] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:49:56] "[36mGET /static/images/close.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:50:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:50:00] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:50:00] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:52:40] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:52:40] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:53:09] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:53:46] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 17:53:46] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:40] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:40] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:42] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:46] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:46] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:47] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:47] "[36mGET /static/images/close.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:47] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:47] "[36mGET /static/images/adm.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:47] "[36mGET /static/images/pass.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:47] "[36mGET /static/images/key.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:54] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:54] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:54] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:58] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:58] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:40:58] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:41:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:41:51] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:41:51] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:41:53] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:41:56] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:01] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:48] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:48] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:50] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:53] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:53] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:53] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:53] "[36mGET /static/images/close.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:53] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:53] "[36mGET /static/images/pass.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:53] "[36mGET /static/images/adm.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:42:53] "[36mGET /static/images/key.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:43:02] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:43:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:43:02] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:44:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:44:28] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:44:28] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:44:30] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:44:44] "POST /process_status HTTP/1.1" 200 -
+E /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 Error on request:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3.8/site-packages/werkzeug/serving.py", line 325, in execute
+    for data in application_iter:
+  File "/usr/lib/python3.8/site-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/usr/lib/python3.8/site-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/userdata/aidemo/flask-opencv-rknn/controller/modules/home/views.py", line 29, in video_stream
+    frame = video_camera.get_frame()
+  File "/userdata/aidemo/flask-opencv-rknn/controller/utils/camera.py", line 81, in get_frame
+    cv2.imwrite('result.jpg', self.frame)
+cv2.error: OpenCV(4.5.5) /home/tgg/rk3568_linux_sdk/buildroot/output/rockchip_rk3568/build/opencv4-4.5.5/modules/imgcodecs/src/loadsave.cpp:801: error: (-215:Assertion failed) !_img.empty() in function 'imwrite'
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:44:53] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:45:58] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:45:58] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:00] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:01] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:22] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:31] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:31] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:31] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 [33mPress CTRL+C to quit[0m
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:58] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:46:58] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:47:00] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:47:12] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:47:30] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:47:41] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:47:50] "POST /process_status HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:47:51] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:47:51] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:47:51] "[36mGET /static/images/cat.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3.8/site-packages/werkzeug/_internal.py:96 192.168.0.104 - - [05/May/2024 21:47:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
